@@ -1,0 +1,470 @@
+/* coding for whole web page */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* making website header section */
+.container{
+    min-height: 70vh;
+    width: 100%;
+    background-image:url(images/room018.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.site-header{
+    display: flex;
+    gap: 40%;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: green;
+    transition: background-color 0.5s ease;
+}
+.container2{
+    display: flex;
+    gap: 12px;
+}
+.container1{
+    display: flex;
+}
+/* Making website 1st section's body */
+.logotitle{
+    font-size: 25px;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 30px;
+}
+span{
+    color: darkorange;
+}
+.logo{
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
+}
+.list{
+    color: #fff;
+    list-style: none;
+    display: flex;
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 18px;
+    gap: 40px;
+    cursor: pointer;
+    transition: 1s;
+}
+.list li:hover{
+    color: darkorange;
+}
+.hometitle{
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 20px;
+}
+.titleh2{
+    text-align: center;
+    font-size: 35px;
+    color: #fff;
+    border: 1px solid #000;
+    background: #000;
+    width: 550px;
+    margin-left: 31%;
+    margin-top: 80px;
+    opacity: 0.7;
+    height: 50px;
+}
+.p2{
+    text-align: center;
+    border: 1px solid white;
+    background-color: white;
+    width: 400px;
+    margin-left: 37%;
+    font-size: 20px;
+}
+.contact-details{
+    margin-top: 2%;
+    margin-left: 3%;
+    font-size: 20px;
+    display: flex;
+    gap: 10px;
+}
+.email{
+    display: flex;
+    gap: 12px;
+    font-size: 20px;
+}
+.insta{
+    display: flex;
+    gap: 12px;
+}
+.btn1{
+    display: flex;
+    gap: 160px;
+    border: 1px solid white;
+    width: 900px;
+    margin-left: 20%;
+    height: 60px;
+    margin-top: 30px;
+    backdrop-filter: blur(10px);
+}
+.btn{
+    margin-top: 1%;
+    width: 200px;
+    height: 40px;
+    font-size: 15px;
+    color: #fff;
+    background: green;
+    border-radius: 20px;
+    border: none;
+}
+/* Creating room section */
+.cardtitle{
+    text-align: center;
+    font-size: 40px;
+    color: #000;
+    font-weight: 600;
+}
+hr{
+    width: 130px;
+    margin-left: 41.3%;
+    height: 5px;
+    background: green;
+    border: none;
+}
+/* creating special offer section */
+.specialoffers{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.offerh1{
+    font-size: 30px;
+    color: #000;
+    margin-left: 30px;
+}
+.offers{
+    display: flex;
+}
+
+.optionh4{
+    text-align: center;
+}
+.dates{
+    border: 1px solid #000;
+    border: 0%;
+    color: black;
+    margin-right: 20px;
+    border-top: -2px;
+    width: 250px;
+    text-align: center;
+}
+.selections{
+    margin-left: 40%;
+    display: flex;
+    gap: 20px;
+}
+#categories{
+    font-weight: 700;
+    width: 400px;
+}
+.rooms{
+    text-align: center;
+}
+.flyers{
+    display: flex;
+}
+.flyers1{
+   display: flex;
+}
+.flyer1{
+    border: 1px solid rgb(241, 239, 239);
+    background: rgb(241, 239, 239);
+    width: 420px;
+    height: 660px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+.flyer10{
+    border: 1px solid rgb(241, 239, 239);
+    background: rgb(241, 239, 239);
+    width: 420px;
+    height: 560px;
+    margin-left: 40px;
+    margin-bottom: 30px;
+}
+
+.offerh4{
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+    margin-left: 10px;
+
+}
+.facilitybar2{
+    display: flex;
+}
+.p1{
+    color: black;
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.imgoffer{
+    width: 420px;
+    height: 300px;
+}
+#offerh1{
+    font-size: 25px;
+}
+.hr2{
+    width: 150px;
+    margin-left: 40%;
+    height: 5px;
+    background: green;
+    border: none;
+}
+.btn2{
+    margin-top: 1%;
+    width: 200px;
+    height: 40px;
+    font-size: 15px;
+    color: #fff;
+    background: plum;
+    border: none;
+    margin-left: 90px;
+
+}
+.pp1{
+    text-align: center;
+    color: green;
+    font-weight: 600;
+    font-size: 20px;
+}
+/* creating website's footer section */
+.footer{
+    height: 420px;
+    background: #000435;
+    display: flex;
+    gap: 40px;
+}
+.imgs{
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+}
+/* making footer section contact details */
+.contact h2{
+    color: white;
+    margin-top: 15px;
+}
+.details{
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.contact2{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+.contact2 i{
+    font-size: 25px;
+    color: white;
+}
+.contact .cp1{
+    font-size: 17px;
+    color: white;
+    font-weight: 600;
+}
+.chr{
+    width: 60px;
+    margin-left: 1%;
+    margin-top: 5px;
+    height: 4px;
+    background: darkorange;
+    border: none;
+}
+.contact3{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+.contact3 i{
+    font-size: 25px;
+    color: white;
+}
+.contact4{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+.contact4 i{
+    font-size: 25px;
+    color: white;
+}
+/* making footer section feedback form coloumn */
+.form h2{
+    color: white;
+    margin-top: 30px;
+    margin-left: 250px;
+}
+.form1{
+    margin-left: 100px;
+}
+.form1 #name{
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 40px;
+    width: 200px;
+}
+.form1 #email{
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 40px;
+    width: 195px;
+    color: #fff;
+}
+.form1 #subject{
+    background: transparent;
+    border-radius: 20px;
+    height: 60px;
+    width: 410px;
+    border: 1px solid black;
+}
+.form1 #message{
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 150px;
+    width: 410px;
+    background: #fff;
+    margin-left: 4px;
+}
+.nameemail{
+    display: flex;
+    gap: 6px;
+}
+.subject{
+    display: flex;
+    gap: 6px;
+}
+.nameemail #name{
+    font-size: 15px;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white background */
+    backdrop-filter: blur(8px); /* Apply blur effect to the background behind the input */
+  -webkit-backdrop-filter: blur(8px); /* For Webkit-based browsers */
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Optional: Add a subtle border */
+    padding: 10px;
+    border-radius: 15px;
+}
+.nameemail #email{
+    font-size: 15px;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white background */
+  backdrop-filter: blur(8px); /* Apply blur effect to the background behind the input */
+  -webkit-backdrop-filter: blur(8px); /* For Webkit-based browsers */
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Optional: Add a subtle border */
+    padding: 10px;
+    border-radius: 15px;
+}
+.subject #subject{
+    font-size: 15px;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white background */
+  backdrop-filter: blur(8px); /* Apply blur effect to the background behind the input */
+  -webkit-backdrop-filter: blur(8px); /* For Webkit-based browsers */
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Optional: Add a subtle border */
+    padding: 10px;
+    border-radius: 15px;
+}
+.textarea #message{
+    background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white background */
+  backdrop-filter: blur(8px); /* Apply blur effect to the background behind the input */
+  -webkit-backdrop-filter: blur(8px); /* For Webkit-based browsers */
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Optional: Add a subtle border */
+    padding: 10px;
+    border-radius: 15px;
+}
+.textarea #message::placeholder{
+    color: #fff;
+    font-size: 17px;
+}
+/* making subscribe to news letter coloumn in footer section  */
+.fhr{
+    width: 70px;
+    margin-left: 48%;
+    margin-top: 5px;
+    height: 4px;
+    background: darkorange;
+    border: none;
+}
+.subscription h2{
+    color: white;
+    margin-top: 30px;
+    margin-left: 130px;
+}
+.sub1{
+    margin-left: 120px;
+}
+.sub1 #email1{
+    width: 300px;
+    font-size: 15px;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white background */
+  backdrop-filter: blur(8px); /* Apply blur effect to the background behind the input */
+  -webkit-backdrop-filter: blur(8px); /* For Webkit-based browsers */
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Optional: Add a subtle border */
+    padding: 10px;
+    border-radius: 5px;
+}
+.sub1 .btn3{
+    width: 200px;
+    height: 40px;
+    font-size: 15px;
+    color: #fff;
+    background: crimson;
+    border: none;
+    margin-left: 60px;
+    border-radius: 12px;
+}
+.shr{
+    width: 150px;
+    margin-left: 31%;
+    margin-top: 5px;
+    height: 4px;
+    background: darkorange;
+    border: none; 
+}
+/* Making footer 2 section */
+.footer2{
+    height: 80px;
+    background: crimson;
+}
+/* Design social media links in footer 2 */
+.footer2 .social-media{
+    font-size: 27px;
+    display: flex;
+    gap: 120px;
+    margin-left: 450px;
+}
+.footer2 .social-media i{
+    margin-top: 10px;
+}
+.fp1{
+    text-align: center;
+    color: #fff;
+}
+
+
+
+
+
