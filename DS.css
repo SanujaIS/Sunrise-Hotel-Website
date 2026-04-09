@@ -1,0 +1,751 @@
+/* code for whole website */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --primery-color: #fd562a;
+    --secondary-color: rgba(255,255,255,0.4);
+}
+/* making website section1 */
+.section1{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(images/photo1.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.nav1 ul{
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+.nav1 ul li{
+    margin-top: 15px;
+    margin-left: 20px;
+    font-size: 14px;
+}
+.li1{
+    color: darkorange;
+}
+.nav1 ul li:hover{
+    color: darkorange;
+}
+.navbar2{
+    display: flex;
+    gap: 20px;
+}
+.nav2 ul{
+    display: flex;
+    color: white;
+    list-style: none;
+    gap: 30px;
+    margin-top: 15px;
+    font-size: 14px;
+}
+.nav2 ul li:hover{
+    color: darkorange;
+}
+.phone{
+    display: flex;
+    margin-top: 15px;
+    gap: 5px;
+    font-size: 14px;
+}
+.location{
+    display: flex;
+    margin-top: 15px;
+    gap: 5px;
+    font-size: 14px;
+}
+.location i{
+    margin-top: 2px;
+}
+/* making headers */
+.header0{
+    display: flex;
+    gap: 180px;
+    color: white;
+    background: #000435;
+    height: 50px;
+}
+.header1{
+    background: darkorange;
+    height: 7px;
+    margin-top: 0.2px;
+}
+.header2{
+    display: flex;
+    gap: 30px;
+}
+.header2{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(5px);
+    margin-top: 0.1px;
+    gap: 200px;
+}
+span{
+    color: darkorange;
+}
+.header2 h2{
+    margin-top: 30px;
+    color: white;
+    font-size: 30px;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+}
+.main{
+    display: flex;
+    gap: 12px;
+}
+.nav3 ul{
+    display: flex;
+    list-style: none;
+    gap: 80px;
+    margin-top: 40px;
+    color: white;
+}
+.nav3 ul li:hover{
+    color: rgb(213, 120, 6);
+}
+.btn1 button{
+    width: 150px;
+    height: 50px;
+    margin-top: 25px;
+    margin-left: 10px;
+    background: #000435;
+    border: #000435;
+    color: white;
+    font-size: 17px;
+    transition: 1s;
+}
+.btn1 button:hover{
+    background: rgb(213, 120, 6);
+    color: black;
+}
+.line3{
+    display: flex;
+    gap: 70px;
+}
+.btn2 button{
+    width: 150px;
+    height: 50px;
+    margin-top: 25px;
+    margin-left: 10px;
+    background: rgb(213, 120, 6);
+    border: rgb(213, 120, 6);
+    color: black;
+    font-size: 17px;
+    transition: 1s; 
+}
+.btn2 button:hover{
+    background: #000435;
+    color: white;
+}
+.btns{
+    display: flex;
+    gap: 30px;
+}
+/* Links inside the navbar */
+a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 13px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #000435;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: darkorange;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: white;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.section1 h1{
+    margin-top: 150px;
+    margin-left: 22%;
+    font-size: 80px;
+    color: white;
+    font-weight: bold;
+}
+#typing{
+    color: darkorange;
+    font-size:30px;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-left: 450px;
+}
+#typing::after{
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 1em;
+    background-color: darkorange;
+    margin-left: 5px;
+    animation: blink 1s step-start infinite
+}
+@keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+
+/* Making section 2 */
+.section2{
+    background: white;
+}
+.section2 h1{
+    font-size: 40px;
+    margin-top: 20px;
+    margin-left: 38%;
+}
+.content1{
+    display: flex;
+}
+.content2{
+    display: flex;
+    gap: 40px;
+}
+.content2 h2{
+    margin-left: 40px;
+    margin-top: 60px;
+    font-size: 40px;
+    font-weight: bolder;
+}
+.content1 img{
+    margin-top: 40px;
+    margin-left: 30px;
+    width: 600px;
+    height: 500px;
+}
+.content2 img{
+    width: 100px;
+    height: 100px;
+
+}
+.texts p{
+    margin-top: 50px;
+    margin-right: 200px;
+}
+.para{
+    margin: 10px;
+}
+.para p{
+    margin-left: 20px;
+}
+.social-media{
+    margin-left: 300px;
+    margin-top: 40px;
+    font-size: 30px;
+}
+.card1{
+    display: flex;
+    margin-left: 250px;
+    margin-top: 50px;
+    gap: 50px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+    width: 1000px;
+    height: 250px;
+    background: white;
+}
+.card1:hover{
+    background: white;
+}
+.card1 img{
+    width: 500px;
+    height: 200px;
+    margin-top: 25px;
+    margin-left: 40px;
+}
+.card1 h3{
+    margin-top: 10px;
+    color: black;
+}
+.card1 p{
+    margin-top: 15px;
+    color: black;
+}
+/* making menu-highlights */
+.menu-highlights{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(images/food001.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+hr{
+    width: 200px;
+    margin-left: 42%;
+    margin-top: 3px;
+    height: 4px;
+    background: darkorange;
+    border: none;
+}
+.menu-highlights h1{
+    color: white;
+    margin-left: 42%;
+    font-size: 35px;
+}
+.menus{
+    display: flex;
+}
+.menus2{
+    display: flex;
+}
+.menu1{
+    border: 1px solid #fff;
+    width: 450px;
+    background: white;
+    margin-left: 30px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.menu1 h1{
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 25px;
+    color: #000;
+}
+.menu1 img{
+    margin-left: 25px;
+    width: 400px;
+    height: 300px;
+    margin-top: 10px;
+}
+.menu1 p{
+    color: black;
+    margin-left: 20px;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.menu2{
+    border: 1px solid #fff;
+    width: 450px;
+    background: white;
+    margin-left: 20px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.menu2 h1{
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 25px;
+    color: #000;
+}
+.menu2 img{
+    margin-left: 25px;
+    width: 400px;
+    height: 300px;
+    margin-top: 10px;
+}
+.menu2 p{
+    color: black;
+    margin-left: 20px;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.menu3{
+    border: 1px solid #fff;
+    width: 450px;
+    background: white;
+    margin-left: 20px;
+    margin-top: 40px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.menu3 h1{
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 25px;
+    color: #000;
+}
+.menu3 img{
+    margin-left: 25px;
+    width: 400px;
+    height: 300px;
+    margin-top: 10px;
+}
+.menu3 p{
+    color: black;
+    margin-left: 20px;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+/* making service section */
+#service-section{
+    min-height: 640px;
+    width: 100%;
+    background: seashell;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#service-section h2{
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    position: relative;
+    margin-top: -50px;
+}
+#service-section h2::after{
+    position: absolute;
+    content: " ";
+    top: 8px;
+    left: -30px;
+    height: 0;
+    width: 0;
+    border-top: 20px solid transparent;
+    border-left: 20px solid var(--primery-color);
+}
+#service-section h2::before{
+    position: absolute;
+    content: " ";
+    top: 8px;
+    right: -30px;
+    height: 0px;
+    width: 0px;
+    border-top: 20px solid transparent;
+    border-right: 20px solid var(--primery-color);
+}
+#service-section #paragraph{
+    width: 40%;
+    font-size: 1rem;
+    color: black;
+    text-align: center;
+    line-height: 1.5rem;
+    white-space: 1px;
+    margin-bottom: 40px;
+}
+/* making banners */
+.banners{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+    z-index: 9;
+    margin-top: 20px;
+}
+.banners .banner1{
+    height: 300px;
+    width: 420px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 0 8%;
+    background: #000435;
+    position: relative;
+    border-radius: 10px;
+}
+.banners .banner1::before{
+    position: absolute;
+    content: " ";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    background: var(--primery-color);
+    transition: 0.6s;
+    transform: rotate(0deg);
+    z-index: -1;
+}
+.banners .banner1:hover.banner1::before{
+    transform: rotate(10deg);
+}
+.banners .banner1 i{
+    font-size: 2.5rem;
+    color: var(--primery-color);
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+.banners .banner1 h3{
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.banners .banner1 .text2 p{
+    color: rgba(255,255,255,0.4);
+    font-size: 1.05rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+/* making footer section */
+.footer{
+    height: 420px;
+    background: #000435;
+    display: flex;
+    gap: 40px;
+}
+.imgs{
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+}
+/* making footer section contact details */
+.contact h2{
+    color: white;
+    margin-top: 15px;
+}
+.details{
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.contact2{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+.contact2 i{
+    font-size: 25px;
+    color: white;
+}
+.contact .cp1{
+    font-size: 17px;
+    color: white;
+    font-weight: 600;
+}
+.chr{
+    width: 60px;
+    margin-left: 1%;
+    margin-top: 5px;
+    height: 4px;
+    background: darkorange;
+    border: none;
+}
+.contact3{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+.contact3 i{
+    font-size: 25px;
+    color: white;
+}
+.contact4{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+.contact4 i{
+    font-size: 25px;
+    color: white;
+}
+/* making footer section feedback form coloumn */
+.form h2{
+    color: white;
+    margin-top: 30px;
+    margin-left: 250px;
+}
+.form1{
+    margin-left: 100px;
+}
+.form1 #name{
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 40px;
+    width: 200px;
+}
+.form1 #email{
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 40px;
+    width: 195px;
+    color: #fff;
+}
+.form1 #subject{
+    background: transparent;
+    border-radius: 20px;
+    height: 60px;
+    width: 410px;
+    border: 1px solid black;
+}
+.form1 #message{
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 150px;
+    width: 410px;
+    background: #fff;
+    margin-left: 4px;
+}
+.nameemail{
+    display: flex;
+    gap: 6px;
+}
+.subject{
+    display: flex;
+    gap: 6px;
+}
+.nameemail #name{
+    font-size: 15px;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white background */
+    backdrop-filter: blur(8px); /* Apply blur effect to the background behind the input */
+  -webkit-backdrop-filter: blur(8px); /* For Webkit-based browsers */
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Optional: Add a subtle border */
+    padding: 10px;
+    border-radius: 15px;
+}
+.nameemail #email{
+    font-size: 15px;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white background */
+  backdrop-filter: blur(8px); /* Apply blur effect to the background behind the input */
+  -webkit-backdrop-filter: blur(8px); /* For Webkit-based browsers */
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Optional: Add a subtle border */
+    padding: 10px;
+    border-radius: 15px;
+}
+.subject #subject{
+    font-size: 15px;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white background */
+  backdrop-filter: blur(8px); /* Apply blur effect to the background behind the input */
+  -webkit-backdrop-filter: blur(8px); /* For Webkit-based browsers */
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Optional: Add a subtle border */
+    padding: 10px;
+    border-radius: 15px;
+}
+.textarea #message{
+    background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white background */
+  backdrop-filter: blur(8px); /* Apply blur effect to the background behind the input */
+  -webkit-backdrop-filter: blur(8px); /* For Webkit-based browsers */
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Optional: Add a subtle border */
+    padding: 10px;
+    border-radius: 15px;
+}
+.textarea #message::placeholder{
+    color: #fff;
+    font-size: 17px;
+}
+/* making subscribe to news letter coloumn in footer section  */
+.fhr{
+    width: 70px;
+    margin-left: 48%;
+    margin-top: 5px;
+    height: 4px;
+    background: darkorange;
+    border: none;
+}
+.subscription h2{
+    color: white;
+    margin-top: 30px;
+    margin-left: 130px;
+}
+.sub1{
+    margin-left: 120px;
+}
+.sub1 #email1{
+    width: 300px;
+    font-size: 15px;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white background */
+  backdrop-filter: blur(8px); /* Apply blur effect to the background behind the input */
+  -webkit-backdrop-filter: blur(8px); /* For Webkit-based browsers */
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Optional: Add a subtle border */
+    padding: 10px;
+    border-radius: 5px;
+}
+.sub1 .btn3{
+    width: 200px;
+    height: 40px;
+    font-size: 15px;
+    color: #fff;
+    background: crimson;
+    border: none;
+    margin-left: 60px;
+    border-radius: 12px;
+}
+.shr{
+    width: 150px;
+    margin-left: 31%;
+    margin-top: 5px;
+    height: 4px;
+    background: darkorange;
+    border: none; 
+}
+/* Making footer 2 section */
+.footer2{
+    margin-top: -40px;
+    height: 80px;
+    background: crimson;
+}
+/* Design social media links in footer 2 */
+.footer2 .social-media{
+    font-size: 27px;
+    display: flex;
+    gap: 120px;
+    margin-left: 450px;
+}
+.footer2 .social-media i{
+    margin-top: 10px;
+}
+.fp1{
+    text-align: center;
+    color: #fff;
+}
